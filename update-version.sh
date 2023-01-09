@@ -2,16 +2,18 @@ WORKDIR="C:/"
 TMPDIR="DevOpsFinalProject"
 GITREPO="https://github.com/itaybiton/DevOpsFinalProject.git"
 RESOURCE="C:\Program Files\Apache Software Foundation\Tomcat 8.5\webapps\omer-dan-itay-amit"
+ 
+cat <<EOF
+     _            _                                   _ 
+    | |          | |                                 | |
+  __| | ___ _ __ | | ___  _   _   _ __  _ __ ___   __| |
+ / _  |/ _ \   _ | |/ _ \| | | | |  _ \|  __/ _ \ / _  |
+| (_| |  __/ |_) | | (_) | |_| | | |_) | | | (_) | (_| |
+ \__,_|\___| .__/|_|\___/ \__, | | .__/|_|  \___/ \__,_|
+           | |             __/ | | |                    
+           |_|            |___/  |_|                    
 
-echo "      _            _                                   _ "
-echo "     | |          | |                                 | |"
-echo "   __| | ___ _ __ | | ___  _   _   _ __  _ __ ___   __| |"
-echo "  / _  |/ _ \   _ | |/ _ \| | | | |  _ \|  __/ _ \ / _  |"
-echo " | (_| |  __/ |_) | | (_) | |_| | | |_) | | | (_) | (_| |"
-echo "  \__,_|\___| .__/|_|\___/ \__, | | .__/|_|  \___/ \__,_|"
-echo "            | |             __/ | | |                    "
-echo "            |_|            |___/  |_|                    "
-echo ""
+EOF
 
 cd "${WORKDIR}"
 # DELETE FOLDER IF EXISTS
