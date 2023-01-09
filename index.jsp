@@ -21,6 +21,10 @@
     <a href="http://www.ynet.co.il">www.ynet.co.il</a>
 <% } %>
 
+<% if (clicks == 15) { %>
+    <a href="http://www.walla.co.il">www.walla.co.il</a>
+<% } %>
+
 <form action="">
     <input type="text" name="integer" value="1"/>
     <input type="submit" value="submit" />
