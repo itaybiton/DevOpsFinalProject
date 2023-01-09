@@ -4,15 +4,19 @@
 
 <%
     String param = request.getParameter("integer");
+    String reset = request.getParameter("reset");
 
-    try
-    {
-       int i = Integer.parseInt(param);
-
-       clicks += 1;
-    } 
-    catch (NumberFormatException e)
-    {
+    if (reset != null) {
+        clicks = 0;
+    } else {
+        try
+        {
+            int i = Integer.parseInt(param);
+            clicks += 1;
+        } 
+        catch (NumberFormatException e)
+        {
+        }
     }
 %>
 <p>Number of clicks untill now: <%= clicks %> </p>
@@ -28,6 +32,10 @@
 <form action="">
     <input type="text" name="integer" value="1"/>
     <input type="submit" value="submit" />
+</form>
+
+<form action="" method="post">
+    <input type="submit" value="reset" name="reset" />
 </form>
     </body>
 </html>
