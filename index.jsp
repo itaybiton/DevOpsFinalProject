@@ -22,7 +22,7 @@
 <p>Number of clicks untill now: <%= clicks %> </p>
 
 <% if (clicks == 10) { %>
-    <a href="http://www.ynet.co.il">www.ynet.co.il</a>
+    <a href="http://www.ynet.co.il">ynet</a>
 <% } %>
 
 <% if (clicks == 15) { %>
